@@ -18,11 +18,13 @@ public class VideojuegoServicesImpl implements VideojuegoServices{
 
 	@Override
 	public void create(Videojuego videojuego) {
+		
 		videojuegoRepository.save(videojuego);
 	}
 
 	@Override
 	public List<Videojuego> getAll() {
+		
 		return videojuegoRepository.findAll();
 	}
 
